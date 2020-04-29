@@ -2,18 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.updatedbackgroundapplication">
 
-<<<<<<< HEAD
     <uses-permission android:name="android.permission.RECEIVE_LAUNCH_BROADCASTS" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-=======
-    <uses-permission android:name="android.permission.RECEIVE_LAUNCH_BROADCASTS"/>
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
-
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
->>>>>>> ed20829c6e909b7e57d5d12f999d303e9327add0
 
     <application
         android:allowBackup="true"
@@ -22,7 +15,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@android:style/Theme.NoDisplay">
-<<<<<<< HEAD
         <service
             android:name=".JobPing"
             android:enabled="true"
@@ -36,17 +28,6 @@
             android:launchMode="singleInstance" />
         <service
             android:name=".JobService"
-=======
-
-        <service
-            android:name=".MainService"
-            android:enabled="true"
-            android:clearTaskOnLaunch="true"
-            android:excludeFromRecents="true"
-            android:launchMode="singleInstance"></service>
-
-        <service android:name=".JobService"
->>>>>>> ed20829c6e909b7e57d5d12f999d303e9327add0
             android:permission="android.permission.BIND_JOB_SERVICE" />
 
         <activity android:name=".MainActivity">
@@ -62,7 +43,6 @@
             android:enabled="true"
             android:exported="true"
             android:label="StartMyServiceAtBootReceiver">
-<<<<<<< HEAD
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <action android:name="android.intent.action.QUICKBOOT_POWERON" />
@@ -72,19 +52,6 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </receiver>
-=======
-
-            <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED"/>
-                <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
-                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
-                <action android:name="uk.ac.shef.oak.activity_recognition.sensor_service.RestartSensor"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
-
-        </receiver>
-
->>>>>>> ed20829c6e909b7e57d5d12f999d303e9327add0
     </application>
 
 </manifest>

@@ -5,11 +5,7 @@ android {
     buildToolsVersion "29.0.2"
     defaultConfig {
         applicationId "com.example.updatedbackgroundapplication"
-<<<<<<< HEAD
         minSdkVersion 21
-=======
-        minSdkVersion 19
->>>>>>> ed20829c6e909b7e57d5d12f999d303e9327add0
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -27,10 +23,7 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.0.2'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
-<<<<<<< HEAD
     implementation 'com.android.volley:volley:1.1.1'
-=======
->>>>>>> ed20829c6e909b7e57d5d12f999d303e9327add0
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'

@@ -62,12 +62,8 @@ public class MainService extends Service {
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.O) {
             restartForeground();
         }
-<<<<<<< HEAD
         RequestServer repeatingService = new RequestServer(this);
         repeatingService.execute();
-=======
-
->>>>>>> ed20829c6e909b7e57d5d12f999d303e9327add0
         startTimer();
         return START_STICKY;
     }
@@ -101,11 +97,8 @@ public class MainService extends Service {
                 Notification notification = builder.build();
                 startForeground(NOTIFICATION_ID, notification);
                 Log.d(TAG, "Restart foreground succsessful");
-<<<<<<< HEAD
                 RequestServer repeatingService = new RequestServer(this);
                 repeatingService.execute();
-=======
->>>>>>> ed20829c6e909b7e57d5d12f999d303e9327add0
                 startTimer();
             }
             catch(Exception e)
